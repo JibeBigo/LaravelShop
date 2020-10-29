@@ -1,0 +1,178 @@
+* { /* or body */
+    font-family:'Nunito Sans', sans-serif, arial, "arial black", verdana;
+}
+
+/* ----------------------------------------------- MENU (nav bar) ----------------------------------------*/
+a.cart {
+    background: url('images/constant/Cart Button.png');
+    background-position: center;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    display: block;
+    width: 40px;
+}
+
+div.right {
+    grid-column-start: menu-right;
+    justify-self: right;
+}
+
+div.wrapper_menu {
+    display: grid;
+    grid-template-columns: [menu-left] 50% auto [menu-right] 15%;
+    margin: 0 3% 0 3%;
+    width: 94%;
+}
+
+img.logo {
+    height: 65px;
+    margin: 0 0 0 0;
+    width: 65px;
+}
+
+img.menu_mobile {
+    display: none;
+}
+
+nav li {
+    margin: auto 20px auto 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    background-color: white;
+    color: black!important;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+nav.menu {
+    background-color: white!important;
+    height: 80px;
+    padding: 0;
+}
+
+/* hide admin tools default */
+#adminTools {
+    display:none;
+}
+
+/* ----------------------------------------------- SEARCH bar ----------------------------------------*/
+.grid-search {
+    display: grid;
+    grid-column-gap: 3%;
+    grid-template-columns: 22% 22% 22% 22%;
+	height: auto;
+    margin: 0 3% 0 3%;
+    width: 94%;
+}
+
+.grid-search1 {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.search{
+    width: 100%;
+}
+
+.search input#search {
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-bottom: 0%;
+    width: 90%;
+    padding-left:20px;
+
+}
+
+input#search:focus {
+    outline: none;
+}
+
+/* ----------------------------------------------- BODY (main grid) ----------------------------------------*/
+.big-container {
+	margin: 3%;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 5%;
+    /* margin-top: 8%; */
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 22% 22% 22% 22%;
+	grid-template-rows: 40% 40%;
+	grid-column-gap: 3%;
+    grid-row-gap: 20%;
+    height: auto;
+    width: 100%;
+}
+
+.info {
+	display: flex;
+    flex-direction: column;
+}
+
+.info-text {
+    color: rgb(156, 156, 156);
+    font-size: 0.65rem;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.line1-text {
+    font-size: 0.9rem;
+}
+
+p {
+	font-size: 0.75rem;
+}
+
+strong{
+	font-weight: bold;
+}
+   /*----------------------------------------------- FOOTER SECTION CREATE PAGINATION ----------------------------------------*/
+.pagination a {
+    color: black;
+    float: left;
+    font-size: 0.8rem;
+    margin-right: 1.5%;
+    padding: 1rem 1.3rem;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: black;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+} /* select element which is NOT .active */
+
+.pagination {
+    display: flex;
+    font-weight: bold;
+    margin: 5% 3% 5% 3%;
+    width: 100%;
+}
+
+footer {
+    margin-top: 10%;
+}
+
